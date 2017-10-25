@@ -1,4 +1,4 @@
-#N canvas 64 166 271 594 16;
+#N canvas 64 166 271 575 16;
 #X declare -path _abstract -lib Gem;
 #N canvas 316 103 427 614 INIT 0;
 #X obj 302 20 arrast_cpu;
@@ -1490,7 +1490,7 @@ DAS DURAÇÕES PARA OS VISORES, f 41;
 #X restore 48 104 pd INDEX;
 #X text 143 105 MECANISMO DE ÍNDICE GLOBAL PARA AUTOMAÇÕES;
 #X restore 60 453 pd AUTOMATION_CONTROL;
-#N canvas 345 119 877 644 MAIN_GUI 1;
+#N canvas 371 134 877 644 MAIN_GUI 1;
 #X obj 2 1 cnv 15 873 641 empty empty empty 20 12 0 14 -66577 -66577
 0;
 #X obj 12 11 cnv 15 205 621 empty empty empty 20 12 0 14 -1 -66577
@@ -2404,8 +2404,8 @@ empty 50 8 0 10 -24198 -1 -1 0;
 #X obj 226 318 cnv 10 12 12 empty empty P 3 7 0 10 -1 -128992 0;
 #X obj 177 380 hradio 20 1 0 3 \$0-autoExport_gui \$0-autoExport_gui_set
 EXPORT 13 10 0 10 -1 -1 -262144 1;
-#X obj 157 259 nbx 5 12 -1e+37 1e+37 0 0 \$0-autoSamplesDisplay_gui
+#X obj 157 259 nbx 5 12 -1e+037 1e+037 0 0 \$0-autoSamplesDisplay_gui
 \$0-autoSamplesDisplay_gui_set SAMPLES 0 -8 0 8 -1 -262144 -1 0 256
 ;
-#X obj 212 259 nbx 4 12 -1e+37 1e+37 0 0 \$0-autoSecDisplay_gui \$0-autoSecDisplay_gui_set
+#X obj 212 259 nbx 4 12 -1e+037 1e+037 0 0 \$0-autoSecDisplay_gui \$0-autoSecDisplay_gui_set
 SECS 0 -8 0 8 -1 -262144 -1 0 256;
