@@ -1,0 +1,547 @@
+#N canvas 187 64 514 641 16;
+#X obj 20 43 cnv 15 240 572 empty empty empty 20 12 0 14 -228856 -66577
+0;
+#X obj 30 63 hradio 15 1 0 3 \$0-enableV_gui \$0-enableV_gui_set enable
+50 8 0 10 -262144 -1 -1 2;
+#X obj 138 63 hradio 15 1 0 3 \$0-activeSlotV_gui \$0-activeSlotV_gui_set
+activeSlot 50 8 0 10 -262144 -1 -1 2;
+#X obj 30 93 hradio 15 1 0 3 \$0-ioMode_gui \$0-ioMode_gui_set ioMode
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 113 hradio 15 1 0 3 \$0-inSet_gui \$0-inSet_gui_set inSet
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 133 hradio 15 1 0 3 \$0-outSet_gui \$0-outSet_gui_set outSet
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 153 hradio 15 1 0 3 \$0-speed_gui \$0-speed_gui_set speed
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 173 hradio 15 1 0 3 \$0-play_gui \$0-play_gui_set play 50
+8 0 10 -262144 -1 -1 2;
+#X obj 138 93 hradio 15 1 0 3 \$0-rw_gui \$0-rw_gui_set rw 50 8 0 10
+-262144 -1 -1 2;
+#X obj 138 113 hradio 15 1 0 3 \$0-inv_gui \$0-inv_gui_set inv 50 8
+0 10 -262144 -1 -1 2;
+#X obj 138 133 hradio 15 1 0 3 \$0-stop_gui \$0-stop_gui_set stop 50
+8 0 10 -262144 -1 -1 2;
+#X obj 138 153 hradio 15 1 0 3 \$0-loop_gui \$0-loop_gui_set loop 50
+8 0 10 -262144 -1 -1 2;
+#X obj 138 173 hradio 15 1 0 3 \$0-loopMode_gui \$0-loopMode_gui_set
+loopMode 50 8 0 10 -262144 -1 -1 2;
+#X obj 30 242 hradio 15 1 0 3 \$0-enableI_gui \$0-enableI_gui_set enable
+50 8 0 10 -262144 -1 -1 2;
+#X obj 138 242 hradio 15 1 0 3 \$0-activeSlotI_gui \$0-activeSlotI_gui_set
+activeSlot 50 8 0 10 -262144 -1 -1 2;
+#X obj 30 311 hradio 15 1 0 3 \$0-enableC_gui \$0-enableC_gui_set enable
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 380 hradio 15 1 0 3 \$0-transp_gui \$0-transp_gui_set transp
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 400 hradio 15 1 0 3 \$0-white_gui \$0-white_gui_set white
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 420 hradio 15 1 0 3 \$0-black_gui \$0-black_gui_set black
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 440 hradio 15 1 0 3 \$0-fadeIn_gui \$0-fadeIn_gui_set fadeIn
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 460 hradio 15 1 0 3 \$0-fadeOut_gui \$0-fadeOut_gui_set fadeOut
+50 8 0 10 -262144 -1 -1 2;
+#X obj 138 380 hradio 15 1 0 3 \$0-flipH_gui \$0-flipH_gui_set flipH
+50 8 0 10 -262144 -1 -1 2;
+#X obj 138 400 hradio 15 1 0 3 \$0-flipV_gui \$0-flipV_gui_set flipV
+50 8 0 10 -262144 -1 -1 2;
+#X obj 138 420 hradio 15 1 0 3 \$0-scale_gui \$0-scale_gui_set scale
+50 8 0 10 -262144 -1 -1 2;
+#X obj 138 440 hradio 15 1 0 3 \$0-posX_gui \$0-posX_gui_set posX 50
+8 0 10 -262144 -1 -1 2;
+#X obj 138 460 hradio 15 1 0 3 \$0-posY_gui \$0-posY_gui_set posY 50
+8 0 10 -262144 -1 -1 2;
+#X obj 30 529 hradio 15 1 0 3 \$0-red_gui \$0-red_gui_set red 50 8
+0 10 -262144 -1 -1 2;
+#X obj 30 549 hradio 15 1 0 3 \$0-green_gui \$0-green_gui_set green
+50 8 0 10 -262144 -1 -1 2;
+#X obj 30 569 hradio 15 1 0 3 \$0-blue_gui \$0-blue_gui_set blue 50
+8 0 10 -262144 -1 -1 2;
+#X obj 138 529 hradio 15 1 0 3 \$0-gain_gui \$0-gain_gui_set gain 50
+8 0 10 -262144 -1 -1 2;
+#X obj 138 549 hradio 15 1 0 3 \$0-contrast_gui \$0-contrast_gui_set
+contrast 50 8 0 10 -262144 -1 -1 2;
+#X obj 138 569 hradio 15 1 0 3 \$0-saturation_gui \$0-saturation_gui_set
+saturation 50 8 0 10 -262144 -1 -1 2;
+#X obj 138 589 hradio 15 1 0 3 \$0-motionBlur_gui \$0-motionBlur_gui_set
+motionBlur 50 8 0 10 -262144 -1 -1 2;
+#X obj 30 589 hradio 15 1 0 3 \$0-colorInv_gui \$0-colorInv_gui_set
+colorInv 50 8 0 10 -262144 -1 -1 2;
+#X obj 20 20 cnv 15 240 22 empty \$0-channelColor VIDEO 30 11 0 14
+-258699 -66577 0;
+#X obj 20 199 cnv 15 240 22 empty \$0-channelColor IMAGE 30 11 0 14
+-258699 -66577 0;
+#X obj 20 268 cnv 15 240 22 empty \$0-channelColor CAMERA 30 11 0 14
+-258699 -66577 0;
+#X obj 20 337 cnv 15 240 22 empty \$0-channelColor TRANSFORM 30 11
+0 14 -258699 -66577 0;
+#X obj 20 486 cnv 15 240 22 empty \$0-channelColor FX 30 11 0 14 -258699
+-66577 0;
+#X obj 32 49 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0;
+#X obj 47 49 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0;
+#X obj 62 49 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0;
+#X obj 167 25 hradio 12 1 0 3 \$0-setAllVideo \$0-setAllVideo_set SET_ALL
+42 6 0 10 -1 -262144 -1 2;
+#X obj 167 204 hradio 12 1 0 3 \$0-setAllImage \$0-setAllImage_set
+SET_ALL 42 6 0 10 -1 -262144 -1 2;
+#X obj 167 343 hradio 12 1 0 3 \$0-setAllTransform \$0-setAllTransform_set
+SET_ALL 42 6 0 10 -1 -228856 -1 2;
+#X obj 167 491 hradio 12 1 0 3 \$0-setAllFx \$0-setAllFx_set SET_ALL
+42 6 0 10 -1 -262144 -1 2;
+#N canvas 443 371 411 307 CHANNEL_COLOR 0;
+#X obj 45 140 sel 1 2 3 4;
+#X msg 45 177 13;
+#X msg 194 177 16;
+#X msg 95 177 15;
+#X obj 45 68 loadbang;
+#X msg 145 177 19;
+#X text 41 23 ** DETERMINA COR PADRÃO DO CANAL;
+#X obj 45 252 s \$0-channelColor;
+#X msg 45 220 color \$1;
+#X obj 45 104 f \$2;
+#X connect 0 0 1 0;
+#X connect 0 1 3 0;
+#X connect 0 2 5 0;
+#X connect 0 3 2 0;
+#X connect 1 0 8 0;
+#X connect 2 0 8 0;
+#X connect 3 0 8 0;
+#X connect 4 0 9 0;
+#X connect 5 0 8 0;
+#X connect 8 0 7 0;
+#X connect 9 0 0 0;
+#X restore 290 232 pd CHANNEL_COLOR;
+#N canvas 10 54 1351 709 CONTROL_MEMORY 0;
+#X text 513 15 ** GESTÃO DA MEMÓRIA LOCAL;
+#X text 106 296 PARÂMETROS DE VÍDEO;
+#X text 556 337 PARÂMETROS DE IMAGEM;
+#X text 556 487 PARÂMETROS DE CÂMERA;
+#X text 523 627 PARÂMETROS DE TRANSFORMAÇÃO;
+#X text 1006 337 PARÂMETROS DE EFEITOS;
+#X text 930 660 ARRAY DE MEMÓRIA LOCAL;
+#X obj 22 325 arrast_param \$0 enableV \$0-memo 0 0 9;
+#X obj 22 355 arrast_param \$0 activeSlotV \$0-memo 1 0 9;
+#X obj 22 395 arrast_param \$0 ioMode \$0-memo 2 0 9;
+#X obj 932 311 t f;
+#X obj 472 311 t f;
+#X obj 472 282 r \$0-setAllImage;
+#X obj 472 601 t f;
+#X obj 472 572 r \$0-setAllTransform;
+#X obj 22 241 r \$0-setAllVideo;
+#X obj 472 471 t f;
+#X obj 472 442 r \$0-setAllCamera;
+#X obj 22 270 t f;
+#N canvas 209 57 650 697 GLOBAL_LINK 0;
+#X obj 103 107 r \$0-setAllLink;
+#X obj 46 136 spigot;
+#X text 119 138 LINK GLOBAL;
+#X obj 318 63 loadbang;
+#X msg 318 92 1;
+#X obj 318 121 s \$0-setAllLink_set;
+#X text 315 151 INICIALIZA LINK GLOBAL;
+#X obj 46 63 r \$0-setAllVideo;
+#X obj 126 282 s \$0-setAllImage_set;
+#X obj 99 316 s \$0-setAllCamera_set;
+#X obj 72 350 s \$0-setAllTransform_set;
+#X obj 46 384 s \$0-setAllFx_set;
+#X text 40 14 ** LINK ENTRE BOTÃO SET_ALL VIDEO PARA TODAS AS UNIDADES
+;
+#X obj 126 552 s \$0-setAllImage_set;
+#X obj 99 586 s \$0-setAllCamera_set;
+#X obj 72 620 s \$0-setAllTransform_set;
+#X obj 46 654 s \$0-setAllFx_set;
+#X obj 46 484 t f f f f f;
+#X obj 153 518 s \$0-setAllVideo_set;
+#X obj 46 440 r \$1-autoSetAll\$2_gui;
+#X text 270 436 SETA TUDO ATRAVÉS DO SELETOR DA INTERFACE PRINCIPAL
+, f 28;
+#X obj 173 238 s \$1-autoSetAll\$2_gui_set;
+#X msg 173 204 set \$1;
+#X obj 46 180 t f f f f f;
+#X text 246 204 ATUALIZA INTERFACE PRINCIPAL;
+#X connect 0 0 1 1;
+#X connect 1 0 23 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 7 0 1 0;
+#X connect 17 0 16 0;
+#X connect 17 1 15 0;
+#X connect 17 2 14 0;
+#X connect 17 3 13 0;
+#X connect 17 4 18 0;
+#X connect 19 0 17 0;
+#X connect 22 0 21 0;
+#X connect 23 0 11 0;
+#X connect 23 1 10 0;
+#X connect 23 2 9 0;
+#X connect 23 3 8 0;
+#X connect 23 4 22 0;
+#X restore 932 776 pd GLOBAL_LINK;
+#X obj 932 282 r \$0-setAllFx;
+#X text 929 748 LINK GLOBAL DE EDICÃO DOS ESTADOS;
+#X obj 22 425 arrast_param \$0 inSet \$0-memo 3 0 9;
+#X obj 22 455 arrast_param \$0 outSet \$0-memo 4 0 9;
+#X obj 22 485 arrast_param \$0 speed \$0-memo 5 0 9;
+#X obj 22 515 arrast_param \$0 play \$0-memo 6 0 9;
+#X obj 22 545 arrast_param \$0 rw \$0-memo 7 0 9;
+#X obj 22 575 arrast_param \$0 inv \$0-memo 8 0 9;
+#X obj 22 605 arrast_param \$0 stop \$0-memo 9 0 9;
+#X obj 22 635 arrast_param \$0 loop \$0-memo 10 0 9;
+#X obj 22 665 arrast_param \$0 loopMode \$0-memo 11 0 9;
+#X obj 22 49 r \$0-autoControl;
+#X text 196 50 RECEBE CONTROLES EXTERNOS;
+#X obj 22 83 route video image camera transform fx setAll;
+#X obj 932 127 s \$1-autoSetAll\$2_gui_set;
+#X text 930 78 SETA TUDO VIA OSC - USA SELETOR DA INTERFACE, f 23
+;
+#X obj 472 127 route enable activeSlot setAll;
+#X obj 472 161 route enable setAll;
+#X obj 472 211 route transp white black fadeIn fadeOut flipH flipV
+scale posX posY setAll, f 39;
+#X obj 932 211 route red green blue colorInv gain contrast saturation
+motionBlur setAll, f 37;
+#X obj 22 127 route enable activeSlot ioMode inSet outSet speed play
+rw inv stop loop loopMode setAll, f 37;
+#X obj 472 366 arrast_param \$0 enableI \$0-memo 12 0 9;
+#X obj 472 396 arrast_param \$0 activeSlotI \$0-memo 13 0 9;
+#X obj 472 516 arrast_param \$0 enableC \$0-memo 14 0 9;
+#X obj 472 656 arrast_param \$0 transp \$0-memo 15 0 9;
+#X obj 472 686 arrast_param \$0 white \$0-memo 16 0 9;
+#X obj 472 716 arrast_param \$0 black \$0-memo 17 0 9;
+#X obj 472 746 arrast_param \$0 fadeIn \$0-memo 18 0 9;
+#X obj 472 776 arrast_param \$0 fadeOut \$0-memo 19 0 9;
+#X obj 472 816 arrast_param \$0 flipH \$0-memo 20 0 9;
+#X obj 472 846 arrast_param \$0 flipV \$0-memo 21 0 9;
+#X obj 472 876 arrast_param \$0 scale \$0-memo 22 0 9;
+#X obj 472 906 arrast_param \$0 posX \$0-memo 23 0 9;
+#X obj 472 936 arrast_param \$0 posY \$0-memo 24 0 9;
+#X obj 932 366 arrast_param \$0 red \$0-memo 25 0 9;
+#X obj 932 396 arrast_param \$0 green \$0-memo 26 0 9;
+#X obj 932 426 arrast_param \$0 blue \$0-memo 27 0 9;
+#X obj 932 456 arrast_param \$0 colorInv \$0-memo 28 0 9;
+#X obj 932 496 arrast_param \$0 gain \$0-memo 29 0 9;
+#X obj 932 526 arrast_param \$0 contrast \$0-memo 30 0 9;
+#X obj 932 556 arrast_param \$0 saturation \$0-memo 31 0 9;
+#X obj 932 586 arrast_param \$0 motionBlur \$0-memo 32 0 9;
+#X obj 932 689 array define \$0-memo 33;
+#X connect 10 0 54 0;
+#X connect 10 0 55 0;
+#X connect 10 0 56 0;
+#X connect 10 0 57 0;
+#X connect 10 0 58 0;
+#X connect 10 0 59 0;
+#X connect 10 0 60 0;
+#X connect 10 0 61 0;
+#X connect 11 0 41 0;
+#X connect 11 0 42 0;
+#X connect 12 0 11 0;
+#X connect 13 0 44 0;
+#X connect 13 0 45 0;
+#X connect 13 0 46 0;
+#X connect 13 0 47 0;
+#X connect 13 0 48 0;
+#X connect 13 0 49 0;
+#X connect 13 0 50 0;
+#X connect 13 0 51 0;
+#X connect 13 0 52 0;
+#X connect 13 0 53 0;
+#X connect 14 0 13 0;
+#X connect 15 0 18 0;
+#X connect 16 0 43 0;
+#X connect 17 0 16 0;
+#X connect 18 0 7 0;
+#X connect 18 0 8 0;
+#X connect 18 0 9 0;
+#X connect 18 0 22 0;
+#X connect 18 0 23 0;
+#X connect 18 0 24 0;
+#X connect 18 0 25 0;
+#X connect 18 0 26 0;
+#X connect 18 0 27 0;
+#X connect 18 0 28 0;
+#X connect 18 0 29 0;
+#X connect 18 0 30 0;
+#X connect 20 0 10 0;
+#X connect 31 0 33 0;
+#X connect 33 0 40 0;
+#X connect 33 1 36 0;
+#X connect 33 2 37 0;
+#X connect 33 3 38 0;
+#X connect 33 4 39 0;
+#X connect 33 5 34 0;
+#X connect 36 0 41 0;
+#X connect 36 1 42 0;
+#X connect 36 2 11 0;
+#X connect 37 0 43 0;
+#X connect 37 1 16 0;
+#X connect 38 0 44 0;
+#X connect 38 1 45 0;
+#X connect 38 2 46 0;
+#X connect 38 3 47 0;
+#X connect 38 4 48 0;
+#X connect 38 5 49 0;
+#X connect 38 6 50 0;
+#X connect 38 7 51 0;
+#X connect 38 8 52 0;
+#X connect 38 9 53 0;
+#X connect 38 10 13 0;
+#X connect 39 0 54 0;
+#X connect 39 1 55 0;
+#X connect 39 2 56 0;
+#X connect 39 3 57 0;
+#X connect 39 4 58 0;
+#X connect 39 5 59 0;
+#X connect 39 6 60 0;
+#X connect 39 7 61 0;
+#X connect 39 8 10 0;
+#X connect 40 0 7 0;
+#X connect 40 1 8 0;
+#X connect 40 2 9 0;
+#X connect 40 3 22 0;
+#X connect 40 4 23 0;
+#X connect 40 5 24 0;
+#X connect 40 6 25 0;
+#X connect 40 7 26 0;
+#X connect 40 8 27 0;
+#X connect 40 9 28 0;
+#X connect 40 10 29 0;
+#X connect 40 11 30 0;
+#X connect 40 12 18 0;
+#X restore 290 164 pd CONTROL_MEMORY;
+#N canvas 41 77 1075 593 SEND_CONTROL 0;
+#X obj 45 70 r \$0-enableV;
+#X obj 45 99 pack 0 0;
+#X text 42 23 ** ENVIA ESTADO DE CADA PARÂMETRO DO CANAL PARA AUTÔMATOS
+USANDO COMO ID O 2 ELEMENTO DA LISTA, f 95;
+#X obj 45 128 s \$2-autoState;
+#X obj 45 228 s \$2-autoState;
+#X obj 45 170 r \$0-activeSlotV;
+#X obj 45 199 pack 0 1;
+#X obj 45 328 s \$2-autoState;
+#X obj 45 270 r \$0-ioMode;
+#X obj 45 299 pack 0 2;
+#X obj 45 428 s \$2-autoState;
+#X obj 45 528 s \$2-autoState;
+#X obj 45 370 r \$0-inSet;
+#X obj 45 470 r \$0-outSet;
+#X obj 225 128 s \$2-autoState;
+#X obj 225 228 s \$2-autoState;
+#X obj 225 328 s \$2-autoState;
+#X obj 225 428 s \$2-autoState;
+#X obj 225 528 s \$2-autoState;
+#X obj 225 70 r \$0-speed;
+#X obj 225 170 r \$0-play;
+#X obj 225 270 r \$0-rw;
+#X obj 225 370 r \$0-inv;
+#X obj 225 470 r \$0-stop;
+#X obj 395 128 s \$2-autoState;
+#X obj 395 228 s \$2-autoState;
+#X obj 395 70 r \$0-loop;
+#X obj 395 170 r \$0-loopMode;
+#X obj 395 328 s \$2-autoState;
+#X obj 395 428 s \$2-autoState;
+#X obj 395 270 r \$0-enableI;
+#X obj 395 370 r \$0-activeSlotI;
+#X obj 395 528 s \$2-autoState;
+#X obj 575 128 s \$2-autoState;
+#X obj 575 228 s \$2-autoState;
+#X obj 575 328 s \$2-autoState;
+#X obj 575 428 s \$2-autoState;
+#X obj 395 470 r \$0-enableC;
+#X obj 575 70 r \$0-transp;
+#X obj 575 170 r \$0-white;
+#X obj 575 270 r \$0-black;
+#X obj 575 370 r \$0-fadeIn;
+#X obj 575 528 s \$2-autoState;
+#X obj 745 128 s \$2-autoState;
+#X obj 745 228 s \$2-autoState;
+#X obj 745 328 s \$2-autoState;
+#X obj 745 428 s \$2-autoState;
+#X obj 575 470 r \$0-fadeOut;
+#X obj 745 70 r \$0-flipH;
+#X obj 745 170 r \$0-flipV;
+#X obj 745 370 r \$0-posX;
+#X obj 745 528 s \$2-autoState;
+#X obj 915 128 s \$2-autoState;
+#X obj 915 228 s \$2-autoState;
+#X obj 915 328 s \$2-autoState;
+#X obj 915 428 s \$2-autoState;
+#X obj 745 470 r \$0-posY;
+#X obj 915 70 r \$0-red;
+#X obj 915 170 r \$0-green;
+#X obj 915 270 r \$0-blue;
+#X obj 915 370 r \$0-colorInv;
+#X obj 915 528 s \$2-autoState;
+#X obj 1085 128 s \$2-autoState;
+#X obj 1085 228 s \$2-autoState;
+#X obj 1085 328 s \$2-autoState;
+#X obj 915 470 r \$0-gain;
+#X obj 1085 70 r \$0-contrast;
+#X obj 1085 170 r \$0-saturation;
+#X obj 1085 270 r \$0-motionBlur;
+#X obj 745 270 r \$0-scale;
+#X obj 45 399 pack 0 3;
+#X obj 45 499 pack 0 4;
+#X obj 225 99 pack 0 5;
+#X obj 225 199 pack 0 6;
+#X obj 225 299 pack 0 7;
+#X obj 225 399 pack 0 8;
+#X obj 225 499 pack 0 9;
+#X obj 395 99 pack 0 10;
+#X obj 395 199 pack 0 11;
+#X obj 395 299 pack 0 12;
+#X obj 395 399 pack 0 13;
+#X obj 395 499 pack 0 14;
+#X obj 575 99 pack 0 15;
+#X obj 575 199 pack 0 16;
+#X obj 575 299 pack 0 17;
+#X obj 575 399 pack 0 18;
+#X obj 575 499 pack 0 19;
+#X obj 745 99 pack 0 20;
+#X obj 745 199 pack 0 21;
+#X obj 745 299 pack 0 22;
+#X obj 745 399 pack 0 23;
+#X obj 745 499 pack 0 24;
+#X obj 915 99 pack 0 25;
+#X obj 915 199 pack 0 26;
+#X obj 915 299 pack 0 27;
+#X obj 915 399 pack 0 28;
+#X obj 915 499 pack 0 29;
+#X obj 1085 99 pack 0 30;
+#X obj 1085 199 pack 0 31;
+#X obj 1085 299 pack 0 32;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
+#X connect 8 0 9 0;
+#X connect 9 0 7 0;
+#X connect 12 0 70 0;
+#X connect 13 0 71 0;
+#X connect 19 0 72 0;
+#X connect 20 0 73 0;
+#X connect 21 0 74 0;
+#X connect 22 0 75 0;
+#X connect 23 0 76 0;
+#X connect 26 0 77 0;
+#X connect 27 0 78 0;
+#X connect 30 0 79 0;
+#X connect 31 0 80 0;
+#X connect 37 0 81 0;
+#X connect 38 0 82 0;
+#X connect 39 0 83 0;
+#X connect 40 0 84 0;
+#X connect 41 0 85 0;
+#X connect 47 0 86 0;
+#X connect 48 0 87 0;
+#X connect 49 0 88 0;
+#X connect 50 0 90 0;
+#X connect 56 0 91 0;
+#X connect 57 0 92 0;
+#X connect 58 0 93 0;
+#X connect 59 0 94 0;
+#X connect 60 0 95 0;
+#X connect 65 0 96 0;
+#X connect 66 0 97 0;
+#X connect 67 0 98 0;
+#X connect 68 0 99 0;
+#X connect 69 0 89 0;
+#X connect 70 0 10 0;
+#X connect 71 0 11 0;
+#X connect 72 0 14 0;
+#X connect 73 0 15 0;
+#X connect 74 0 16 0;
+#X connect 75 0 17 0;
+#X connect 76 0 18 0;
+#X connect 77 0 24 0;
+#X connect 78 0 25 0;
+#X connect 79 0 28 0;
+#X connect 80 0 29 0;
+#X connect 81 0 32 0;
+#X connect 82 0 33 0;
+#X connect 83 0 34 0;
+#X connect 84 0 35 0;
+#X connect 85 0 36 0;
+#X connect 86 0 42 0;
+#X connect 87 0 43 0;
+#X connect 88 0 44 0;
+#X connect 89 0 45 0;
+#X connect 90 0 46 0;
+#X connect 91 0 51 0;
+#X connect 92 0 52 0;
+#X connect 93 0 53 0;
+#X connect 94 0 54 0;
+#X connect 95 0 55 0;
+#X connect 96 0 61 0;
+#X connect 97 0 62 0;
+#X connect 98 0 63 0;
+#X connect 99 0 64 0;
+#X restore 290 198 pd SEND_CONTROL;
+#X obj 167 274 hradio 12 1 0 3 \$0-setAllCamera \$0-setAllCamera_set
+SET_ALL 42 6 0 10 -1 -262144 -1 2;
+#X obj 149 25 tgl 12 0 \$0-setAllLink \$0-setAllLink_set empty 17 7
+0 10 -1 -262144 -1 1 1;
+#N canvas 407 193 637 282 EXTERNAL_CONTROL 0;
+#X obj 48 72 r OSC_BUS;
+#X text 43 19 ** ROTEAMENTO DE CONTROLE EXTERNO VIA MENSAGENS OSC;
+#X text 153 69 RECEBE OSC DESEMPACOTADO PELO PATCH PRINCIPAL, f 29
+;
+#X obj 48 126 route automation;
+#X text 223 127 FILTRA CONTROLE DE AUTOMAÇÃO;
+#X obj 48 220 s \$0-autoControl;
+#X text 223 221 ENVIA CONTROLES PARA [arrast_automenu];
+#X obj 48 160 route channel\$2;
+#X text 214 161 FILTRA POR CANAL;
+#X connect 0 0 3 0;
+#X connect 3 0 7 0;
+#X connect 7 0 5 0;
+#X restore 290 130 pd EXTERNAL_CONTROL;
+#X obj 140 49 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 155 49 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 170 49 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X obj 32 228 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 47 228 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 62 228 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X obj 140 228 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 155 228 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 170 228 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X obj 32 297 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 47 297 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 62 297 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X obj 32 366 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 47 366 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 62 366 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X obj 140 366 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 155 366 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 170 366 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X obj 32 515 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 47 515 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 62 515 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X obj 140 515 cnv 10 12 12 empty empty M 3 7 0 10 -233017 -66577 0
+;
+#X obj 155 515 cnv 10 12 12 empty empty R 3 7 0 10 -233017 -66577 0
+;
+#X obj 170 515 cnv 10 12 12 empty empty P 3 7 0 10 -233017 -66577 0
+;
+#X coords 0 -1 1 1 240 595 2 20 20;
