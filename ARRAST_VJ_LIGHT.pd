@@ -1,4 +1,4 @@
-#N canvas 64 166 271 575 16;
+#N canvas 6 115 298 619 16;
 #X declare -path _abstract -lib Gem;
 #N canvas 316 103 427 614 INIT 0;
 #X obj 302 20 arrast_cpu;
@@ -1490,7 +1490,7 @@ DAS DURAÇÕES PARA OS VISORES, f 41;
 #X restore 48 104 pd INDEX;
 #X text 143 105 MECANISMO DE ÍNDICE GLOBAL PARA AUTOMAÇÕES;
 #X restore 60 453 pd AUTOMATION_CONTROL;
-#N canvas 371 134 877 644 MAIN_GUI 1;
+#N canvas 328 141 877 644 MAIN_GUI 1;
 #X obj 2 1 cnv 15 873 641 empty empty empty 20 12 0 14 -66577 -66577
 0;
 #X obj 12 11 cnv 15 205 621 empty empty empty 20 12 0 14 -1 -66577

@@ -5,12 +5,12 @@
 0 -8 0 10 -262144 -1 -1 4;
 #X obj 63 153 hsl 160 8 0 0 0 0 \$0-morto \$0-timeline empty -2 -8
 0 10 -1 -262144 -1 0 1;
-#X obj 181 110 nbx 4 12 -1e+37 1e+37 0 0 \$0-morto \$0-secDisplay empty
-0 -8 0 10 -1 -262144 -1 0 256;
+#X obj 181 110 nbx 4 12 -1e+037 1e+037 0 0 \$0-morto \$0-secDisplay
+empty 0 -8 0 10 -1 -262144 -1 0 256;
 #X obj 63 166 hsl 160 10 1 0 0 0 \$0-speed_gui \$0-speed_gui_set empty
 -2 -8 0 10 -262144 -1 -1 7950 1;
-#X obj 141 191 bng 25 250 50 0 \$0-stop_gui \$0-stop_gui_set S 8 13
-0 18 -143491 -258113 -262144;
+#X obj 141 191 bng 25 250 50 0 \$0-stop_gui \$0-stop_gui_set ■ 3
+9 1 32 -143491 -258113 -262144;
 #X obj 210 191 vradio 12 1 0 2 \$0-loopMode_gui \$0-loopMode_gui_set
 empty 0 -8 0 10 -355 -262144 -262144 0;
 #X obj 95 189 bng 12 250 50 0 \$0-rw_gui \$0-rw_gui_set RW 16 6 0 10
@@ -1150,10 +1150,10 @@ ESTIVER LIGADO, f 40;
 #X connect 11 0 7 0;
 #X connect 14 0 13 0;
 #X restore 280 166 pd CHANNEL_COLOR;
-#X obj 178 191 tgl 25 0 \$0-loop_gui \$0-loop_gui_set L 8 13 0 18 -62784
--62784 -1 1 1;
-#X obj 63 191 tgl 25 0 \$0-play_gui \$0-play_gui_set P 8 13 0 18 -42246
--42246 -262144 0 1;
+#X obj 178 191 tgl 25 0 \$0-loop_gui \$0-loop_gui_set ∞ 2 13 1 32
+-62784 -62784 -1 1 1;
+#X obj 63 191 tgl 25 0 \$0-play_gui \$0-play_gui_set ► 5 12 1 18
+-42246 -42246 -262144 0 1;
 #N canvas 373 176 599 304 EXTERNAL_CONTROL 0;
 #X text 213 137 FILTRA POR CANAL;
 #X text 174 170 FILTRA POR MÓDULO;
